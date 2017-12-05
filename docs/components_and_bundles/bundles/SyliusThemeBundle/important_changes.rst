@@ -38,6 +38,11 @@ not for entire asset directory (eg. if ``AcmeBundle/Resources/public/asset.js`` 
 leading to ``AcmeBundle/Resources/public/asset.js`` instead of symlink ``web/bundles/acme/`` leading to ``AcmeBundle/Resources/public/``). 
 When you create a new asset or delete an existing one, it is required to rerun this command to apply changes (just as the hard copy option works).
 
+.. danger::
+
+   Due to performance issues, we recommend to have as little files in theme directories as it is possible. If you have i.e. ``node_modules`` in your theme, move it to your application bundle's resources or directly to the ``web`` directory.
+
+
 Assetic
 -------
 
